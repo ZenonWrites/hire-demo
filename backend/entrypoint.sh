@@ -13,4 +13,4 @@ if [ "$DJANGO_SUPERUSER_USERNAME" ]; then
 fi
 
 echo "Backend ready at http://0.0.0.0:8000 (use your computer's LAN IP from your phone)"
-exec python manage.py runserver 0.0.0.0:8000
+exec python manage.py runserver 0.0.0.0:${PORT:-8000}
