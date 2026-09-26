@@ -8,7 +8,8 @@ ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = [
     "https://recruit-demo-3q2i.onrender.com",
     # If you plan on adding a custom domain later, add it here too:
-    # "https://hire-demo.onrender.com"
+    "https://hire-demo.onrender.com",
+    "
 ]
 
 INSTALLED_APPS = [
@@ -27,7 +28,7 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
+   # "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
 ]
