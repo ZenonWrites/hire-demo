@@ -5,6 +5,12 @@ SECRET_KEY = "demo-only-not-for-production"
 DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://recruit-demo-3q2i.onrender.com",
+    # If you plan on adding a custom domain later, add it here too:
+    # "https://hire-demo.onrender.com"
+]
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
